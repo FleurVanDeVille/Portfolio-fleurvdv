@@ -1,10 +1,10 @@
 import "./Projects.css";
-import travelo from "../assets/travelo.svg";
-import traveloHover from "../assets/travelo_color.svg";
-import resq from "../assets/resq.svg";
-import resqHover from "../assets/resq_color.svg";
-import walkmydog from "../assets/walkmydog.svg";
-import walkmydogHover from "../assets/walkmydog_color.svg";
+import travelo from "../assets/project1_zw.png";
+import traveloHover from "../assets/project1.png";
+import resq from "../assets/resq_zw.png";
+import resqHover from "../assets/resq.png";
+import walkmydog from "../assets/honden_zw.png";
+import walkmydogHover from "../assets/honden.png";
 import rect from "../assets/black_rect.svg";
 
 function Projects() {
