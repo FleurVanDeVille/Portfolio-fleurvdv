@@ -1,0 +1,101 @@
+.projects {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+
+.project-item img {
+    width: 100%;
+}
+
+.project-item h3 {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    margin: 0;
+}
+
+.project-item p {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    margin: 0;
+}
+
+.project-thumb {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+}
+
+/* both images fill the thumb */
+.project-thumb img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* hover image sits absolutely above the main image and is hidden by default */
+.project-thumb img.hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* when hovering the project item switch images */
+.project-item:hover .project-thumb img.hover {
+    opacity: 1;
+}
+
+.project-item:hover .project-thumb img.main {
+    opacity: 0;
+}
+
+.projects h1 {
+    font-size: 9vw;
+    letter-spacing: 0px;
+}
+
+
+@media (max-width: 1024px) {
+    .projects {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .projects h1 {
+        font-size: 9vw;
+        text-align: left;
+    }
+}
+
+@media (max-width: 767px) {
+    .projects {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .projects h1 {
+        font-size: 9vw;
+        text-align: left;
+    }
+}
